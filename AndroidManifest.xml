@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.maienm.streamkeysremote"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-sdk
+        android:targetSdkVersion="20"
+        android:minSdkVersion="14" />
+
+    <application
+        android:label="Streamkeys Remote"
+        android:icon="@drawable/ic_launcher"
+        android:allowBackup="false">
+
+        <activity
+            android:name="com.maienm.streamkeysremote.MediaActivity"
+            android:label="Streamkeys Remote">
+            <intent-filter>
+                <action android:name="android.media.intent.action.GET_STATUS" />
+                <action android:name="android.media.intent.action.PAUSE" />
+                <action android:name="android.media.intent.action.PLAY" />
+                <action android:name="android.media.intent.action.RESUME" />
+                <action android:name="android.media.intent.action.SEEK" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
